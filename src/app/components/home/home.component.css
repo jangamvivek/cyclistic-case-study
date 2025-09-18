@@ -1,0 +1,121 @@
+/* Custom CSS for Home Component */
+
+.hero-section {
+  padding: 4rem 0;
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #0d6efd, #6610f2);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent; 
+}
+
+.title-underline {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(45deg, #0d6efd, #6610f2);
+  border-radius: 2px;
+  margin-top: 1rem;
+}
+
+.info-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+  border-left: 4px solid #0d6efd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+}
+
+.summary-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e9ecef;
+}
+
+.summary-card {
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  border: 1px solid #f1f3f4;
+}
+
+/* .summary-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(13, 110, 253, 0.15);
+  border-color: #0d6efd;
+} */
+
+.summary-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, rgba(145, 13, 253, 0.1), rgba(242, 16, 16, 0.1));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.gradient-icon {
+  font-size: 48px; 
+  background: linear-gradient(135deg, #0d6efd, #663bac); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.summary-card h5 {
+  color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 0;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .summary-section {
+    padding: 2rem 1rem;
+  }
+  
+  .info-card {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Animation for elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-section > .container > .row > .col-lg-8 > div {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.summary-card:nth-child(1) { animation-delay: 0.1s; }
+.summary-card:nth-child(2) { animation-delay: 0.2s; }
+.summary-card:nth-child(3) { animation-delay: 0.3s; }
