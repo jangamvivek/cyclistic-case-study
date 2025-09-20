@@ -1,0 +1,7 @@
+{
+  "routes": {
+    "/cyclistic-case-study": {},
+    "/cyclistic-case-study/dashboard": {},
+    "/cyclistic-case-study/home": {}
+  }
+}
